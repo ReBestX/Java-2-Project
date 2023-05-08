@@ -18,10 +18,6 @@ public class JavaProject extends StoreInfo {
         Customer nC = new Customer();
         Items nI = new Items();
         ShoppingCart nSC = new ShoppingCart();
-        Customer newC = new Customer(22,"ayman",new ArrayList<Items>());
-        Items newI = new Items(1,"fifa22",100,200,'g');
-        Customers.add(newC);
-        itemsList.add(newI);
         boolean program = true;
         while(program){
             System.out.println("-------[ "+YELLOW+"Store Main Menu"+RESET+" ]-------");
