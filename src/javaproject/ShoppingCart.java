@@ -14,7 +14,7 @@ public class ShoppingCart {
         while(Flag){
             boolean Flag2 = true;
             char selector = 'y';
-            char selctorpls = 'y';
+            char selectorpls = 'y';
             Customer SelectedCustomer = new Customer();
             while(Flag2){
                 int CustomerNumber = 0;
@@ -43,7 +43,7 @@ public class ShoppingCart {
                     System.out.print(RED+"[ERROR] > The Customer is not exists, "+RESET);
                     boolean FlagEnd = true;
                     while(FlagEnd){
-                        System.out.print("Do you want try agian(y/n)? ");
+                        System.out.print("Do you want to try again (y/n)?");
                         selector = input.nextLine().toLowerCase().charAt(0);
                         if(selector == 'y'){
                             Flag2 = true;
@@ -154,23 +154,23 @@ public class ShoppingCart {
                 boolean FlagEnd = true;
                 while(FlagEnd){
                     System.out.print("Do you want add another item to shopping cart (y/n)? ");
-                    selctorpls = input.nextLine().toLowerCase().charAt(0);
-                    if(selctorpls == 'y'){
+                    selectorpls = input.nextLine().toLowerCase().charAt(0);
+                    if(selectorpls == 'y'){
                         Flag = true;
                         FlagEnd = false;
-                    }else if(selctorpls == 'n'){
+                    }else if(selectorpls == 'n'){
                         Flag = false;
                         FlagEnd = false;
                     } else {
                         System.out.println(RED + "[ERROR] > Invalid input. Please enter 'y' or 'n'." + RESET);
                     }
                 }
-                if(selctorpls == 'n'){
+                if(selectorpls == 'n'){
                     Flag3 = false;
                     break;
                 }
             }
-            if(selctorpls == 'n'){
+            if(selectorpls == 'n'){
                     Flag = false;
                     break;
             }
@@ -210,7 +210,7 @@ public class ShoppingCart {
                     System.out.print(RED+"[ERROR] > The Customer is not exists, "+RESET);
                     boolean FlagEnd = true;
                     while(FlagEnd){
-                        System.out.print("Do you want try agian(y/n)? ");
+                        System.out.print("Do you want to try again (y/n)?");
                         selector = input.nextLine().toLowerCase().charAt(0);
                         if(selector == 'y'){
                             Flag2 = true;
@@ -322,7 +322,7 @@ public class ShoppingCart {
                     System.out.print(RED+"[ERROR] > The Customer is not exists, "+RESET);
                     boolean FlagEnd = true;
                     while(FlagEnd){
-                        System.out.print("Do you want try agian(y/n)? ");
+                        System.out.print("Do you want to try again (y/n)?");
                         selector = input.nextLine().toLowerCase().charAt(0);
                         if(selector == 'y'){
                             Flag2 = true;
@@ -367,8 +367,8 @@ public class ShoppingCart {
             }
         }
     }
-    public void Chechout(){
-        System.out.println(YELLOW+"[ Chechout Operation : ]"+RESET);
+    public void Checkout(){
+        System.out.println(YELLOW+"[ Checkout Operation : ]"+RESET);
         boolean Flag = true;
         while(Flag){
             boolean Flag2 = true;
@@ -401,7 +401,7 @@ public class ShoppingCart {
                     System.out.print(RED+"[ERROR] > The Customer is not exists, "+RESET);
                     boolean FlagEnd = true;
                     while(FlagEnd){
-                        System.out.print("Do you want try agian(y/n)? ");
+                        System.out.print("Do you want to try again (y/n)?");
                         selector = input.nextLine().toLowerCase().charAt(0);
                         if(selector == 'y'){
                             Flag2 = true;
@@ -437,7 +437,7 @@ public class ShoppingCart {
                 for (int j = 0; j < SelectedCustomer.getShoppingCart().size(); j++){
                     if(itemsList.get(i).getItemNumber() == SelectedCustomer.getShoppingCart().get(j).getItemNumber()){
                         if (itemsList.get(i).getItemQuantity() < SelectedCustomer.getShoppingCart().get(j).getItemQuantity()) {
-                            System.out.println(RED+"[ERROR] > Error in Chechout,there is no enough quantity of ["+itemsList.get(i).getItemName()+"]"+RESET);
+                            System.out.println(RED+"[ERROR] > Error in Checkout: not enough quantity of ["+itemsList.get(i).getItemName()+"]"+RESET);
                             enoughQuantity = false;
                             break;
                         }
@@ -458,7 +458,7 @@ public class ShoppingCart {
                 for (int i = 0; i < SelectedCustomer.getShoppingCart().size(); i++) {
                     SelectedCustomer.getShoppingCart().remove(i);
                 }
-                System.out.println(GREEN+"[DONE] > Chechout Done"+RESET);
+                System.out.println(GREEN+"[DONE] > Checkout Done"+RESET);
                 
             }
             Flag4 = false;
@@ -515,7 +515,7 @@ public class ShoppingCart {
                     System.out.print(RED+"[ERROR] > The Customer is not exists, "+RESET);
                     boolean FlagEnd = true;
                     while(FlagEnd){
-                        System.out.print("Do you want try agian(y/n)? ");
+                        System.out.print("Do you want to try again (y/n)?");
                         selector = input.nextLine().toLowerCase().charAt(0);
                         if(selector == 'y'){
                             Flag2 = true;

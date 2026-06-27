@@ -122,7 +122,7 @@ public class Customer {
                     System.out.print(RED+"[ERROR] > The Customer is not exists, "+RESET);
                     boolean FlagEnd = true;
                     while(FlagEnd){
-                        System.out.print("Do you want try agian(y/n)? ");
+                        System.out.print("Do you want to try again (y/n)? ");
                         selector = input.nextLine().toLowerCase().charAt(0);
                     if(selector == 'y'){
                         Flag2 = true;

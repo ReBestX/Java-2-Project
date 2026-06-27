@@ -41,7 +41,7 @@ public class JavaProject extends StoreInfo {
                 case 3 : nSC.AddShoppingCardItem(); break;
                 case 4 : nSC.RemoveShoppingCardItem(); break;
                 case 5 : nSC.ViewShoppingCartItems(); break;
-                case 6 : nSC.Chechout(); break;
+                case 6 : nSC.Checkout(); break;
                 case 7 : nSC.EmptyCart(); break;
                 case 8 : nC.ModifyCustomerData(); break;
                 case 9 : program = false;System.out.println(GREEN+"Thanks for your purchase, visit us SOON"+RESET); break;
@@ -50,7 +50,7 @@ public class JavaProject extends StoreInfo {
                 case 33 : AddShoppingCardItemDescription(); break;
                 case 44 : RemoveShoppingCardItemDescription(); break;
                 case 55 : ViewShoppingCartItemsDescription(); break;
-                case 66 : ChechoutDescription(); break;
+                case 66 : CheckoutDescription(); break;
                 case 77 : EmptyCartDescription(); break;
                 case 88 : ModifyCustomerDataDescription(); break;
             }

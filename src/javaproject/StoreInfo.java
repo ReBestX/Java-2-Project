@@ -55,7 +55,7 @@ public abstract class StoreInfo {
                            If the user presses 'm', the function exits and returns control to the main program. 
                            Overall, this function provides a user-friendly interface for the user to view the shopping cart of any customer in the system.""");
     }
-    public static void ChechoutDescription (){
+    public static void CheckoutDescription (){
         System.out.println("""
                            The Checkout function begins by prompting the user to enter a customer number, 
                            and then checks if the entered customer number exists in the customer list. 
@@ -76,7 +76,7 @@ public abstract class StoreInfo {
     }
     public static void ModifyCustomerDataDescription (){
         System.out.println("""
-                           The AddCustomer function allows the user to modify customer data. 
+                           The ModifyCustomerData function allows the user to modify customer data.
                            It starts by prompting the user to enter a customer number. 
                            If the customer number exists in the system, 
                            the function will display the customer's current number and name and then prompt the user to enter a new customer number and name. 
